@@ -101,6 +101,18 @@ const siteLang = siteConfig.lang.replace('_', '-')
 				  media={favicon.theme && `(prefers-color-scheme: ${favicon.theme})`}
 			/>
 		))}
+		
+		<!-- Google tag (gtag.js) -->
+		<script type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=G-P5SZYVC5Y8"></script>
+        <script type="text/partytown">
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'G-P5SZYVC5Y8');
+        </script>
+		
 		<!-- Set the theme before the page is rendered to avoid a flash -->
 		<script define:vars={{DEFAULT_THEME: DEFAULT_THEME, LIGHT_MODE: LIGHT_MODE, DARK_MODE: DARK_MODE, AUTO_MODE: AUTO_MODE}}>
 			const theme = localStorage.getItem('theme') || DEFAULT_THEME;

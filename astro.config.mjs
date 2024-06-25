@@ -2,6 +2,7 @@ import tailwind from "@astrojs/tailwind"
 import Compress from "astro-compress"
 import icon from "astro-icon"
 import { defineConfig } from "astro/config"
+import partytown from "@astrojs/partytown"
 import Color from "colorjs.io"
 import rehypeAutolinkHeadings from "rehype-autolink-headings"
 import rehypeKatex from "rehype-katex"
@@ -30,10 +31,16 @@ const oklchToHex = (str) => {
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://fuwari.vercel.app/",
-  base: "/",
+  site: "https://h-terao.github.io",
+  base: "/blog",
   trailingSlash: "always",
   integrations: [
+    partytown({
+      // Adds dataLayer.push as a forwarding-event.
+      config: {
+        forward: ["dataLayer.push"],
+      },
+    }),
     tailwind(),
     swup({
       theme: false,
