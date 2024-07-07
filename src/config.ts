@@ -8,7 +8,7 @@ import { LinkPreset } from './types/config'
 
 export const siteConfig: SiteConfig = {
   title: 'Open Memos',
-  subtitle: 'Information technology',
+  subtitle: '',
   lang: 'ja',         // 'en', 'zh_CN', 'zh_TW', 'ja'
   themeColor: {
     hue: 250,         // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
@@ -32,11 +32,11 @@ export const navBarConfig: NavBarConfig = {
     LinkPreset.Home,
     LinkPreset.Archive,
     LinkPreset.About,
-    {
-      name: 'GitHub',
-      url: 'https://github.com/h-terao',     // Internal links should not include the base path, as it is automatically added
-      external: true,                               // Show an external link icon and will open in a new tab
-    },
+    // {
+    //   name: 'GitHub',
+    //   url: 'https://github.com/h-terao',     // Internal links should not include the base path, as it is automatically added
+    //   external: true,                               // Show an external link icon and will open in a new tab
+    // },
   ],
 }
 
@@ -52,11 +52,11 @@ export const profileConfig: ProfileConfig = {
     //                                     // `pnpm add @iconify-json/<icon-set-name>`
     //   url: 'https://twitter.com',
     // },
-    // {
-    //   name: 'GitHub',
-    //   icon: 'fa6-brands:github',
-    //   url: 'https://github.com/h-terao',
-    // },
+    {
+      name: 'GitHub',
+      icon: 'fa6-brands:github',
+      url: 'https://github.com/h-terao',
+    },
     // {
     //   name: 'Steam',
     //   icon: 'fa6-brands:steam',
