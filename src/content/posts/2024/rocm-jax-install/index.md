@@ -33,8 +33,9 @@ draft: false
 
 ## GPUドライバとROCmのインストール
 
-まず、`amdgpu-install`コマンドを使えるようにします。
+まず、`amdgpu-install`コマンドを使えるようにします。[こちらのページ](https://www.amd.com/ja/support/linux-drivers)から、AMD Radeonグラフィックス用のLinuxドライバーにあるUbuntu x86 64ビットから自分の環境にあったファイルをダウンロードします。（自分の場合は、Ubuntu 22.04.4用のファイルをダウンロードしました。）
 
+ファイルのダウンロードが終わったら、ファイルを保存したディレクトリでターミナルを開き、以下のコマンドを叩きます。
 ```bash
 sudo apt update
 sudo apt install ./amdgpu-install_6.1.60103-1_all.deb
