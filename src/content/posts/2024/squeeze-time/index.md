@@ -88,7 +88,7 @@ class TFC(linen.Module):
 
 		return x
 ```
-ただし、チャネルごとの重みはCTL Module内で使いまわす必要があるため、実際の実装は少し上とは異なっています。
+ただし、チャネルごとの重みはCTL Module内で使いまわすような構造になっているため、実際の実装は少し上とは異なっています。
 
 #### Inter-temporal Object Interaction Module
 

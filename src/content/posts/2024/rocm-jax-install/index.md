@@ -135,6 +135,8 @@ pip install dist/jaxlib-0.4.30.dev20240713-cp312-cp312-manylinux2014_x86_64.whl
 pip install jax==0.4.30
 ```
 
+## 動作確認
+
 jaxとjaxlibのインストールが完了したら簡単に動作確認をしましょう。
 Pythonインタプリタ内で以下のようにコマンドを叩いてみて、同様の結果が返ってくればOKです。
 
