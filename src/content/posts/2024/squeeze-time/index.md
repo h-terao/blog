@@ -1,10 +1,10 @@
 ---
-title: "No Time to Waste: Squeeze Time into Channel for Mobile Video Understanding"
+title: "軽量な動画処理モデルであるSqueezeTimeを実装した"
 published: 2024-06-09
 tags: ["computer vision", "jax", "flax"]
 category: 深層学習
 ---
-## 概要  
+## 概要
 
 - [No Time to Waste: Squeeze Time into Channel for Mobile Video Understanding](https://arxiv.org/abs/2405.08344)を読んだ
 - SqueezeTimeをFlaxで実装した
@@ -17,7 +17,7 @@ category: 深層学習
 
 ## SqueezeTime
 
-SqueezeTimeは、2DCNNベースの軽量な動画処理モデルとして提案されました。  
+SqueezeTimeは、2DCNNベースの軽量な動画処理モデルとして提案されました。
 このモデルには以下の2つの特徴があります。
 - 動画のフレーム列をチャネル方向に重ねたものを入力として受け取る
 - 3DCNNやTransformerベースのモデルと近い精度を達成している
@@ -132,7 +132,7 @@ import jax.random as jr
 from squeeze_time_linen import resnet50
 
 # 事前学習済みの重みを使わないなら、None
-pretrained_path = "k400.pkl"  
+pretrained_path = "k400.pkl"
 
 # モデルを作る
 # num_classesは事前学習に使用したデータセットに合わせること
