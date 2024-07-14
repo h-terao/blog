@@ -4,7 +4,7 @@ published: 2024-07-13
 description: ''
 image: ''
 tags: ['jax', 'rocm', 'popos']
-category: '深層学習'
+category: 'Linux'
 draft: false
 ---
 ## 概要
